@@ -6,6 +6,7 @@ Created on Wed Jan  1 12:36:29 2025
 """
 import pytz
 import datetime
+from pyscript import document
 # Get the current time in UTC
 utc_now = datetime.datetime.utcnow()
 # Get the local timezone
