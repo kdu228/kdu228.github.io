@@ -22,13 +22,13 @@
 
     
 <h2>Welcome to my letter pages from Sankt-Peterburg!</h2>
-<p> Today is <u><label id='today'></label> <script type="py">
+<p> Today is <div id="time"></div><script type="py" output="time">
 import time
 
 print(time.localtime())
 
 print(time.asctime())
-</script></u><p>
+</script><p>
 <p> <div id="day" ></div><script type="py" output="day" src="pycodes/sample.py"></script> <p>
     
 <div class="tab">
