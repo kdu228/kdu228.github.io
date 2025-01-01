@@ -2,21 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
 <script src="scripts/script.js">
 </script>
- <!-- Recommended meta tags -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <!-- PyScript CSS -->
-<link rel="stylesheet" href="https://pyscript.net/releases/2024.5.1/core.css">
-        <!-- This script tag bootstraps PyScript -->
-<script type="module" src="https://pyscript.net/releases/2024.5.1/core.js"></script>
-<py-config type="json">
-  {
-    "packages": ["numpy", "matplotlib"]
-  }
-</py-config>
+<link rel="stylesheet" href="style/stylesheet.css">
+
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
     
 </head>
 <body>
@@ -24,7 +15,10 @@
 
     
 <h2>Welcome to my letter pages from Sankt-Peterburg!</h2>
-<p>Please click one of the menu buttons to read.<p>
+<p> from datetime import datetime
+now = datetime.now()
+print(now)
+<p>
     
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'About me')">About me</button>
