@@ -9,11 +9,11 @@
 
 <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
       <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
-<py-script> 
+<script type="py"> 
 import datetime as dt
 pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
-</py-script>
-    
+</script>
+
 </head>
 <body>
 
@@ -21,7 +21,7 @@ pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
     
 <h2>Welcome to my letter pages from Sankt-Peterburg!</h2>
 <p> Today is <u><label id='today'></label></u><p>
-<p> <py-script src="pycodes/sample.py"></py-script> <p>
+<p> <script type="py" src="pycodes/sample.py"></script> <p>
     
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'About me')">About me</button>
