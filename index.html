@@ -11,18 +11,15 @@
     
 </head>
 <body>
-<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
 
     
 <h2>Welcome to my letter pages from Sankt-Peterburg!</h2>
- <b><p>Today is <u><label id='today'></label></u></p></b>
-        <br>
-        <py-script>
-            import datetime as dt
-            Element('today').write(dt.date.today().strftime('%A %B %d, %Y'))
-        </py-script>
-
+<p> from datetime import datetime
+now = datetime.now()
+print(now)
+<p>
+    
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'About me')">About me</button>
     <button class="tablinks" onclick="openCity(event, 'Photos of SPb')">Photos of SPb</button>
