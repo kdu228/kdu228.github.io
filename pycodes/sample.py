@@ -7,12 +7,20 @@ Created on Wed Jan  1 12:36:29 2025
 import pytz
 import datetime
 from pyscript import document
-# Get the current time in UTC
-utc_now = datetime.datetime.utcnow()
-# Get the local timezone
-local_tz = pytz.timezone('Asia/Kolkata')
-# Convert the UTC time to local time
-local_now = utc_now.replace(tzinfo=pytz.utc).astimezone(local_tz)
-# Print the local time and timezone
-print("Local time: ", local_now.strftime('%Y-%m-%d %H:%M:%S'))
-print("Timezone: ", local_now.tzinfo)
+from datetime import datetime as dt
+
+
+def format_date(dt_, fmt="%H : %M : %S"):
+    return dt_.strftime(fmt)
+
+
+def now(fmt="%H : %M : %S"):
+    return format_date(dt.now(), fmt)
+
+
+def remove_class(element, class_name):
+    element.element.classList.remove(class_name)
+
+
+def add_class(element, class_name):
+    element.element.classList.add(class_name)
