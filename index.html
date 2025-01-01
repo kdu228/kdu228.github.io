@@ -10,14 +10,20 @@
 <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
       <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
 
+<py-config type="json">
+  {
+    "packages": ["numpy", "matplotlib", "tzlocal"]
+  }
+</py-config>
+      
 </head>
 <body>
 
 
     
 <h2>Welcome to my letter pages from Sankt-Peterburg!</h2>
-<p> Today is <u><label id='today'></label> <script type="py" src="pycodes/sample.py" config="pycodes/pyscript.json"></script></u><p>
-<p> <script type="py" src="pycodes/sample.py" config="pycodes/pyscript.json"></script> <p>
+<p> Today is <u><label id='today'></label> <script type="py" src="pycodes/sample.py"></script></u><p>
+<p> <script type="py" src="pycodes/sample.py"></script> <p>
     
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'About me')">About me</button>
